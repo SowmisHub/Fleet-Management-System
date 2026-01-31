@@ -1,3 +1,4 @@
+
 const express =  require("express");
 require("dotenv").config();
 const userRoutes =  require("./routes/user.routes");
@@ -16,7 +17,7 @@ app.use(logger);
 app.use("/users", userRoutes);
 app.use("/vehicles", vehicleRoutes);
 app.use("/trips", tripRoutes);
-app.use("/analtics", analyticsRoutes);
+app.use("/analytics", analyticsRoutes);
 
 app.use(notFound);
 app.listen(process.env.PORT, ()=>{
